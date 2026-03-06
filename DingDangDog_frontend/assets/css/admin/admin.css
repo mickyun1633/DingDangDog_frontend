@@ -148,3 +148,8 @@ ul {
 /* 
 =============== 공통 메인 섹션 ===============
 */
+
+.page-list{
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.admin-sidebar{
+  width: 270px;
+}
+
+.main-container {
+      /* display: flex; */
+      height: 100vh;
+}
+
+tr {
+  height: 35px;
+}
+table{
+  width: 100%;
+}
