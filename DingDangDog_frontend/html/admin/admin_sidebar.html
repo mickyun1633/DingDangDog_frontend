@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="kor">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      @font-face {
+        font-family: "HannaPro";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff")
+          format("woff");
+        font-weight: normal;
+        font-display: swap;
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #f1f1f1;
+        font-family: "HannaPro";
+      }
+
+      a {
+        text-decoration: none;
+      }
+      ul {
+        list-style: none;
+      }
+
+      .admin-sidebar {
+        height: 100vh;
+        width: 270px;
+        background-color: white;
+        border-right: 3px solid #f47c2a;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .sidebar-header {
+        height: 160px;
+        background-color: #f47c2a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .sidebar-header a {
+        color: white;
+        font-size: 28px;
+        font-weight: 500;
+      }
+
+      .admin-info-section {
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .user-info {
+        color: #f47c2a;
+        font-size: 23px;
+      }
+
+      .admin-logout-btn {
+        font-weight: bold;
+        margin-left: 20px;
+        background-color: white;
+        width: 70px;
+        height: 25px;
+        color: #f47c2a;
+        border-radius: 5px;
+        border: 1px solid #f47c2a;
+        cursor: pointer;
+      }
+
+      .admin-nav-menus {
+        padding: 30px;
+      }
+
+      .admin-nav-list {
+        width: 190px;
+        cursor: pointer;
+        border-bottom: 1px solid #f47c2a;
+        margin-bottom: 40px;
+        padding: 5px 0;
+      }
+
+      .admin-nav-list:hover {
+        background-color: #f47c2a;
+      }
+      .admin-nav-list:hover .admin-nav-link {
+        color: white;
+      }
+
+      .admin-nav-link {
+        color: #f47c2a;
+        font-size: 23px;
+        font-weight: 500;
+        padding: 0 5px;
+      }
+
+      .sidebar-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: auto;
+      }
+      .site-logo {
+        width: 100px;
+        height: 100px;
+        background-color: #f47c2a;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-bottom: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <aside class="admin-sidebar">
+      <div class="sidebar-header">
+        <a href="">Ding Dong DOG !</a>
+      </div>
+      <div class="admin-info-section">
+        <span class="user-info">admin01</span>
+        <button class="admin-logout-btn">로그아웃</button>
+      </div>
+      <nav class="admin-nav-menus">
+        <ul>
+          <li class="admin-nav-list">
+            <a href="" class="admin-nav-link"> 회원목록</a>
+          </li>
+          <li class="admin-nav-list">
+            <a href="" class="admin-nav-link"> 블랙리스트</a>
+          </li>
+          <li class="admin-nav-list">
+            <a href="" class="admin-nav-link"> 멍! 카이브 목록</a>
+          </li>
+          <li class="admin-nav-list">
+            <a href="" class="admin-nav-link"> 멍! 케어 목록</a>
+          </li>
+          <li class="admin-nav-list">
+            <a href="" class="admin-nav-link"> 멍! 로그 목록</a>
+          </li>
+          <li class="admin-nav-list">
+            <a href="" class="admin-nav-link"> 문의사항</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="sidebar-footer">
+        <!-- 임시 -->
+        <div class="site-logo">로고</div>
+      </div>
+    </aside>
+  </body>
+</html>
