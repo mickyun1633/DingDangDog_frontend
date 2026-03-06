@@ -1,0 +1,150 @@
+/* 
+=============== 공통 변경 css ===============
+*/
+@font-face {
+  font-family: "HannaPro";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff")
+    format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 배경색 */
+body {
+  background-color: #f1f1f1;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+/* 
+=============== 사이드바 ===============
+*/
+
+.admin-sidebar {
+  font-family: "HannaPro";
+  height: 100vh;
+  width: 270px;
+  background-color: white;
+  border-right: 3px solid #f47c2a;
+  display: flex;
+  flex-direction: column;
+  /* position: fixed; */
+}
+
+.admin-sidebar-header {
+  height: 160px;
+  background-color: #f47c2a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-sidebar-header a {
+  color: white;
+  font-size: 28px;
+}
+
+.admin-info-section {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-login-info {
+  color: #f47c2a;
+  font-size: 23px;
+}
+
+.admin-logout-btn {
+  font-family: "HannaPro";
+  margin-left: 20px;
+  background-color: white;
+  width: 70px;
+  height: 25px;
+  color: #f47c2a;
+  border-radius: 5px;
+  border: 1px solid #f47c2a;
+  cursor: pointer;
+}
+
+.admin-nav-menu {
+  padding: 30px;
+}
+
+.admin-nav-list {
+  width: 190px;
+  cursor: pointer;
+  border-bottom: 1px solid #f47c2a;
+  margin-bottom: 40px;
+  padding: 5px 0;
+}
+
+.admin-nav-list:hover {
+  background-color: #f47c2a;
+}
+.admin-nav-list:hover a {
+  color: white;
+}
+
+.admin-nav-list a {
+  color: #f47c2a;
+  font-size: 23px;
+  font-weight: 500;
+  padding: 0 5px;
+}
+
+.admin-sidebar-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+.site-logo {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+/* 
+=============== 사이드바 ===============
+*/
+
+/* 
+=============== 공통 메인 섹션 ===============
+*/
+.admin-main-container {
+  display: flex;
+}
+.admin-main-section {
+  width: 100%;
+  padding: 0 40px;
+  height: 100vh;
+}
+
+.admin-main-section-header {
+  height: 170px;
+}
+.admin-title {
+  font-size: 24px;
+  padding: 35px 0;
+  font-family: "HannaPro";
+}
+/* 
+=============== 공통 메인 섹션 ===============
+*/
