@@ -9,14 +9,14 @@ body{
 }
 
 
-.mypage{
+.mypage-common{
   width:1440px;
   height:804px;
   background:#ffff;
 }
 
 
-.wrap{
+.container{
   width:1440px;
   height:804px;
   padding:0 50px;
@@ -185,7 +185,7 @@ hr{
 
 .info-row dd{
   width:58%;
-  font-size: 24px;
+  font-size: 18px;
   font-weight:700;
   color:#111;
 }
