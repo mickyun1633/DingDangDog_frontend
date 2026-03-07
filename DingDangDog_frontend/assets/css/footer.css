@@ -1,0 +1,23 @@
+/* footer */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer {
+    height: 210px;
+    background-color: #FFEFE6;
+    color: black;
+
+}
+
+.container {
+    margin: 0px;
+    padding: 0px;
+}
+
+.left-menu {
+    padding-left: 50px;
+    padding-top: 80px;
+
+}

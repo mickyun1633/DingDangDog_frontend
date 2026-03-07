@@ -1,0 +1,28 @@
+/* header */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    height: 110px;
+    background-color: pink;
+}
+
+/* .container {
+
+} */
+
+.btn-left-menu {
+    padding-left: 120px;
+    color: #F47C2A;
+
+}
+
+.btn-center-menu {
+    justify-content: center;
+}
+
+.btn-right-menu {
+    padding-right: 20px;
+}
