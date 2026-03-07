@@ -4,7 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>관리자 로그인</title>
-    <link rel="stylesheet" href="../../../assets/css/admin/admin.css" />
+    <link rel="stylesheet" href="/assets/css/admin/admin.css" />
+    <link rel="stylesheet" href="/assets/css/admin/login/admin_login.css" />
   </head>
-  <body></body>
+  <body>
+    <main class="admin-login-main">
+      <div class="login-container admin-box-shadow">
+        <div class="site-name"><span>Ding Dong DOG !</span></div>
+        <div class="admin-login-title"><span>관리자 로그인</span></div>
+        <div class="login-form-container">
+          <form action="../dashboard/admin_dashboard.html">
+            <input type="text" class="admin-login-input" placeholder="아이디" />
+            <br />
+            <input
+              type="password"
+              class="admin-login-input"
+              placeholder="비밀번호"
+            /><br />
+            <input
+              type="submit"
+              name=""
+              id=""
+              class="login-btn"
+              value="로그인"
+            />
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

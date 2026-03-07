@@ -27,6 +27,10 @@ ul {
   list-style: none;
 }
 
+.admin-box-shadow {
+  box-shadow: 2px 2px 5px #b6b6b6;
+}
+
 /* 
 =============== 사이드바 ===============
 */
@@ -132,9 +136,9 @@ ul {
   display: flex;
 }
 .admin-main-section {
+  height: 100vh;
   width: 100%;
   padding: 0 40px;
-  height: 100vh;
 }
 
 .admin-main-section-header {
@@ -145,13 +149,22 @@ ul {
   padding: 35px 0;
   font-family: "HannaPro";
 }
+
 /* 
 =============== 공통 메인 섹션 ===============
 */
-.search-box{
-    margin-top:20px;
-    display:flex;
-    justify-content:flex-end;
+/* 
+---- 검색창 ----
+*/
+.search-box {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+.search-box select {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 0 5px;
 }
 
 .search-box select,
@@ -161,29 +174,67 @@ ul {
   outline: none;
 }
 
-.btn-search{
+.btn-search {
   background-color: #f47c2a;
   width: 60px;
   height: 30px;
   color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
+/* 
+---- 검색창 ----
+*/
 
-.page-list{
+/* 
+---- 페이지네이션 ----
+*/
+.page-list {
+  list-style: none;
   margin-top: 20px;
   display: flex;
   justify-content: center;
   gap: 4px;
 }
-.page-list button{
+.page-list button {
   width: 30px;
   height: 30px;
   margin: 2px 0;
+
+  box-shadow: 2px 2px 5px #b6b6b6;
+}
+.page-list button {
+  cursor: pointer;
+}
+
+.prev-btn,
+.next-btn {
+  background-color: white;
+  border: 1px solid #f47c2a;
+}
+
+.prev-btn span,
+.next-btn span {
+  color: #f47c2a;
+}
+.page-item {
   background-color: white;
   border-style: none;
   border-radius: 5px;
-  box-shadow: 2px 2px 4px
+}
+.current-page {
+  background-color: #f47c2a !important;
+  color: white;
 }
 
-.page-btn{
-  color: #f47c2a;
+.prev-btn {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
+.next-btn {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* 
+  ---- 페이지네이션 ----
+  */

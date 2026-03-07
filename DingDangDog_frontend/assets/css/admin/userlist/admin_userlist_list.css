@@ -1,0 +1,23 @@
+.admin-main-content {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.admin-list-row,
+.admin-list-header {
+  display: grid;
+  grid-template-columns: 150px 1fr 300px 300px 300px 300px;
+  padding-left: 10px;
+  line-height: 35px;
+  text-align: center;
+}
+
+.admin-list-header {
+  height: 40px;
+  font-weight: bold;
+}
+
+.admin-list-row {
+  border-top: 1px solid #f0f0f0;
+  height: 35px;
+}
