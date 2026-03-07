@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'BMHANNAAir'; /* 이 이름을 기억하세요! */
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/BMHANNAAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+  width: 100%;
+  height: 110px;
+  border: 1px solid black;;
+}
+
+footer {
+  width:100%;
+  height: 200px;
+  border: 1px solid black;
+}
+
+main {
+  width:100%;
+  height: 724px;
+  border: 1px solid black;
+  
+}
+
+section {
+  width: 500px;
+  height: 644px;
+  border: 1px solid black;
+  margin: 40px auto;
+  /* display: flexustify-content: center;; */
+}
+
+.login-header-title {
+  width: 500px;
+  height : 70px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 70px;
+  background-color: orange;
+  color : white;
+  font-size: 25px;
+}
+
+.login-container {
+  width: 500px;
+  height: 574px;
+  border: 1px solid black;
+}
+
+.login-main {
+  width: 500px;
+  height: 374px;
+  border: 1px solid black;
+}
+
+.login-main-title {
+  width: 500px;
+  height: 60px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 60px;
+
+}
+
+.form-container {
+  width: 500px;
+  height: 314px;
+  border: 1px solid black;
+}
+
+.login-main-member {
+  width: 500px;
+  height: 80px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.login-main-shelter-choice {
+  width: 170px;
+  height: 30px;
+  border: 1px solid black;
+  text-align: center; 
+  cursor: pointer;
+
+}
+.login-main-common-choice {
+  width: 170px;
+  height: 30px;
+  border: 1px solid black;
+  text-align: center;
+  cursor: pointer;
+}
+
+.login-footer{
+  width: 500px;
+  height: 200px;
+  border: 1px solid black;
+
+}
+
