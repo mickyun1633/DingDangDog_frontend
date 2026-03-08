@@ -1,36 +1,48 @@
 
-*{ margin:0; padding:0;box-sizing:border-box;}
 
-header{
-  background-color: #F47C2A;
-  width: 1440px;
-  height: 110px;
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
-footer{
-  background-color: black;
-  width: 1440px;
-  height: 110px;
+
+@font-face {
+  font-family: "HannaPro";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff")
+    format("woff");
+  font-weight: normal;
+  font-display: swap;
 }
 
 body{
   width:1440px;
   margin:0 auto;
-  background:#ffff;
-  font-family: "BM HANNA_TTF";
+  background:#fff;
+  font-family:"HannaPro", sans-serif;
 }
 
+header{
+  background-color:#F47C2A;
+  width:1440px;
+  height:110px;
+}
 
+footer{
+  background-color:black;
+  width:1440px;
+  height:110px;
+}
 
 .mypage-common{
   width:1440px;
-  height:804px;
-  background:#ffff;
+  min-height:804px;
+  background:#fff;
 }
-
 
 .container{
   width:1440px;
-  height:804px;
+  min-height:804px;
   padding:0 50px;
   display:flex;
   gap:40px;
@@ -224,4 +236,11 @@ hr{
 .btn-outline:hover{
 background-color: #F47C2A;
 color: #fff;
+}
+
+.btn-outline{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
 }

@@ -5,111 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>내가 작성한 멍! 로그 목록</title>
   <link rel="stylesheet" href="./../../../assets/css/mypage/common/review_list.css" />
+  <script defer src="./../../../assets/js/mypage/common/review_list.js"></script>
 </head>
 <body>
   <header>header</header>
+
   <main class="review-list">
     <div class="container">
       <aside class="sidebar">
         <nav class="side-menu">
-          <a class="btn-side-link" href="#">내 정보 변경</a>
+          <a class="btn-side-link" href="./profile_edit_common.html">내 정보 변경</a>
           <hr>
-          <a class="btn-side-link" href="#">멍! 케어 신청 확인</a>
+          <a class="btn-side-link" href="./volunteer_status_list_common.html">멍! 케어 신청 확인</a>
           <hr>
-          <a class="btn-side-link" href="#">내가 작성한 멍! 로그 목록</a>
+          <a class="btn-side-link" href="./review_list.html">내가 작성한 멍! 로그 목록</a>
           <hr>
-          <a class="btn-side-link" href="#">1 : 1 문의</a>
+          <a class="btn-side-link" href="./support_list_common.html">1 : 1 문의</a>
         </nav>
       </aside>
 
       <section class="content">
         <div class="content-box">
-            <div class="panel">
-                <div class="panel-head">
-                    <h2 class="panel-title">내가 작성한 멍! 로그 목록</h2>
-                </div>
-
-                <div class="panel-body">
-                  <div class="review-table">
-                    <div class="review-table-head">
-                      <div class="col-number">글 번호</div>
-                      <div class="col-title">제목</div>
-                      <div class="col-date">작성일자</div>
-                    </div>
-
-                    <div class="review-table-row">
-                      <div class="col-number">10</div>
-                      <div class="col-title">Cell text</div>
-                      <div class="col-date">Cell text</div>
-                    </div>
-                    <div class="review-table-row">
-                      <div class="col-number">9</div>
-                      <div class="col-title">Cell text</div>
-                      <div class="col-date">Cell text</div>
-                    </div>
-                    <div class="review-table-row">
-                      <div class="col-number">8</div>
-                      <div class="col-title">Cell text</div>
-                      <div class="col-date">Cell text</div>
-                    </div>
-                    <div class="review-table-row">
-                      <div class="col-number">7</div>
-                      <div class="col-title">Cell text</div>
-                      <div class="col-date">Cell text</div>
-                    </div>
-                    <div class="review-table-row">
-                      <div class="col-number">6</div>
-                      <div class="col-title">Cell text</div>
-                      <div class="col-date">Cell text</div>
-                    </div>
-                    <div class="review-table-row">
-                      <div class="col-number">5</div>
-                      <div class="col-title">Cell text</div>
-                      <div class="col-date">Cell text</div>
-                    </div>
-                    <div class="review-table-row">
-                      <div class="col-number">4</div>
-                      <div class="col-title">Cell text</div>
-                      <div class="col-date">Cell text</div>
-                    </div>
-                    <div class="review-table-row">
-                      <div class="col-number">3</div>
-                      <div class="col-title">Cell text</div>
-                      <div class="col-date">Cell text</div>
-                    </div>
-                    <div class="review-table-row">
-                      <div class="col-number">2</div>
-                      <div class="col-title">Cell text</div>
-                      <div class="col-date">Cell text</div>
-                    </div>
-                    <div class="review-table-row">
-                      <div class="col-number">1</div>
-                      <div class="col-title">Cell text</div>
-                      <div class="col-date">Cell text</div>
-                    </div>
-
-                    
-                  </div>
-                    <div class="panel-footer">
-                        <div class="pagination">
-                            <ul class="page-list">
-                            <li><button class="page-btn">&lt;</button></li>
-                            <li class="page-item"><button>1</button></li>
-                            <li class="page-item"><button>2</button></li>
-                            <li class="page-item"><button>3</button></li>
-                            <li class="page-item"><button>4</button></li>
-                            <li class="page-item"><button>5</button></li>
-                            <li><button class="page-btn">&gt;</button></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+          <div class="panel">
+            <div class="panel-head">
+              <h2 class="panel-title">내가 작성한 멍! 로그 목록</h2>
             </div>
+
+            <div class="panel-body">
+              <div class="review-table">
+                <div class="review-table-head">
+                  <div class="col-number">글 번호</div>
+                  <div class="col-title">제목</div>
+                  <div class="col-date">작성일자</div>
+                </div>
+
+                <div id="reviewTableBody"></div>
+              </div>
+
+              <div class="panel-footer">
+                <div class="pagination">
+                  <ul class="page-list" id="pagination"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-
     </div>
   </main>
+
   <footer>footer</footer>
+
 </body>
 </html>

@@ -1,11 +1,19 @@
 
 *{ margin:0; padding:0;box-sizing:border-box;}
 
+@font-face {
+  font-family: "HannaPro";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff")
+    format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+
 body{
   width:1440px;
   margin:0 auto;
-  background:#ffff;
-  font-family: "BM HANNA_TTF";
+  background:#fff;
+  font-family:"HannaPro", sans-serif;
 }
 
 header{
@@ -236,59 +244,6 @@ hr{
   gap:20px;
 }
 
-.pagination{
-  flex:1;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:8px;
-}
-
-.page-list{
-  display:flex;
-  align-items:center;
-  gap:8px;
-  list-style:none;
-  padding:0;
-  margin:0;
-}
-
-.page-item{
-  list-style:none;
-}
-
-.page-btn-left{
-  background-color: #fff;
-  color: #F47C2A;
-  border: 1px solid black;
-  box-shadow: 0 1px 1px #161616;
-  width: 30px;
-  height: 30px;
-}
-
-.page-btn-right{
-  background-color: #fff;
-  color: #F47C2A;
-  border: 1px solid black;
-  box-shadow: 0 1px 1px #161616;
-  width: 30px;
-  height: 30px;
-}
-
-.page-item button{
-  background-color: #fff;
-  color: #F47C2A;
-  border: 1px solid black;
-  box-shadow: 0 1px 1px #161616;
-  width: 30px;
-  height: 30px;
-}
-
-.page-item button:hover{
-    background-color: #F47C2A;
-    color: #fff;
-}
-
 
 .btn-outline{
   width:150px;
@@ -297,12 +252,81 @@ hr{
   background:#fff;
   color:#F47C2A;
   font-weight:800;
-  font-size: 15px;
+  font-size:15px;
   border-radius:10px;
   cursor:pointer;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  flex-shrink:0;
 }
 
 .btn-outline:hover{
-background-color: #F47C2A;
-color: #fff;
+  background-color:#F47C2A;
+  color:#fff;
+}
+
+.pagination{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+}
+
+.page-list {
+  list-style: none;
+  margin: 20px 0px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+.page-list button {
+  width: 30px;
+  height: 30px;
+  margin: 2px 0;
+  box-shadow: 2px 2px 5px #b6b6b6;
+  cursor: pointer;
+}
+
+.prev-btn,
+.next-btn {
+  background-color: white;
+  border: 1px solid #f47c2a;
+}
+
+.prev-btn span,
+.next-btn span {
+  color: #f47c2a;
+}
+.page-item {
+  background-color: white;
+  border-style: none;
+  border-radius: 5px;
+}
+.current-page {
+  background-color: #f47c2a !important;
+  color: white;
+}
+
+.prev-btn {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.next-btn {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+
+.col-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.col-title a:hover {
+  text-decoration: underline;
 }

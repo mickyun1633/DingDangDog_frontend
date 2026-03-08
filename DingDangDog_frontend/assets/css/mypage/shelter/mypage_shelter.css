@@ -12,11 +12,19 @@ footer{
   height: 110px;
 }
 
+@font-face {
+  font-family: "HannaPro";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff")
+    format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+
 body{
   width:1440px;
   margin:0 auto;
-  background:#ffff;
-  font-family: "BM HANNA_TTF";
+  background:#fff;
+  font-family:"HannaPro", sans-serif;
 }
 
 
@@ -254,9 +262,34 @@ hr{
   font-size: 15px;
   border-radius:10px;
   cursor:pointer;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
 }
 
 .btn-outline:hover{
 background-color: #F47C2A;
 color: #fff;
+}
+
+.archive-card-empty .empty-card {
+  pointer-events: none;
+}
+
+.archive-card-empty .archive-card-link{
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  pointer-events: none;
+}
+
+.archive-card-empty .archive-card-img,
+.archive-card-empty .archive-card-info{
+  visibility: hidden;
+}
+
+.archive-card-empty{
+  border: none;
+  box-shadow: none;
 }

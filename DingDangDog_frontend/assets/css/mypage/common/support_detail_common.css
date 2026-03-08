@@ -1,11 +1,19 @@
 
 *{ margin:0; padding:0;box-sizing:border-box;}
 
+@font-face {
+  font-family: "HannaPro";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff")
+    format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+
 body{
   width:1440px;
   margin:0 auto;
-  background:#ffff;
-  font-family: "BM HANNA_TTF";
+  background:#fff;
+  font-family:"HannaPro", sans-serif;
 }
 
 header{
@@ -20,7 +28,7 @@ footer{
 }
 
 
-.support-read-shelter{
+.support-detail-common{
   width:1440px;
   height:804px;
   background:#ffff;
@@ -162,9 +170,6 @@ hr{
   
 }
 
-.panel-body h2{
-  size:16px;
-}
 
 
 
@@ -207,24 +212,19 @@ hr{
 }
 
 
-
-
-
-
-
-
-
-
-
 .btn-back,
-.btn-add{
-  width:150px;
-  height:56px;
-  border:none;
+.btn-delete{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  width:120px;
+  height:42px;
+  border-radius:10px;
+  font-size:18px;
+  font-weight:700;
   background:#F47C2A;
   color:#fff;
-  font-weight:800;
-  font-size: 23px;
-  border-radius:10px;
-  cursor:pointer;
+  border:2px solid #F47C2A;
 }
+

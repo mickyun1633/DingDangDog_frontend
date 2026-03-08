@@ -1,5 +1,21 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-*{ margin:0; padding:0;box-sizing:border-box;}
+header{
+  background-color:#F47C2A;
+  width:1440px;
+  height:110px;
+}
+
+footer{
+  background-color:black;
+  width:1440px;
+  height:110px;
+}
+
 @font-face {
   font-family: "HannaPro";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff")
@@ -15,24 +31,11 @@ body{
   font-family:"HannaPro", sans-serif;
 }
 
-header{
-  background-color: #F47C2A;
-  width: 1440px;
-  height: 110px;
-}
-footer{
-  background-color: black;
-  width: 1440px;
-  height: 110px;
-}
-
-
-.review-list{
+.mypage-shelter{
   width:1440px;
   height:804px;
-  background:#ffff;
+  background:#fff;
 }
-
 
 .container{
   width:1440px;
@@ -43,6 +46,12 @@ footer{
   align-items:flex-start;
 }
 
+hr{
+  border:0;
+  background-color:#F47C2A;
+  color:#F47C2A;
+  height:1px;
+}
 
 .sidebar{
   width:350px;
@@ -57,7 +66,6 @@ footer{
   display:flex;
   flex-direction:column;
   gap:20px;
-  
 }
 
 .btn-side-link{
@@ -69,25 +77,15 @@ footer{
   color:#F47C2A;
   font-weight:700;
   font-size:24px;
-  border-radius: 23px;
-  background-color:#ffff;
-  border-color: #F47C2A;
-  border:2px solid #ffff;
+  border-radius:23px;
+  background-color:#fff;
+  border:2px solid #fff;
 }
 
 .btn-side-link:hover{
-  background-color: #F47C2A;
-  color:#ffff;
+  background-color:#F47C2A;
+  color:#fff;
 }
-
-hr{
-  border: 0px;
-  background-color: #F47C2A;
-  color: #F47C2A;
-  height: 1px;
-}
-
-
 
 .content{
   width:1000px;
@@ -96,7 +94,6 @@ hr{
   justify-content:center;
   align-items:center;
 }
-
 
 .content-box{
   width:1000px;
@@ -107,79 +104,20 @@ hr{
   margin:0;
 }
 
-
-
-.review-table{
-  flex:1;
-  min-height:0;
-  display:flex;
-  flex-direction:column;
-  margin-bottom:8px;
-}
-
-.review-table-head,
-.review-table-row{
-  height:40px;
-  display:flex;
-  align-items:center;
-  border-bottom:1px solid #E5E5E5;
-  flex-shrink:0;
-}
-
-.col-number,
-.col-title,
-.col-date{
-  padding-left:16px;
-}
-
-
-.review-table-head{
-  font-size:14px;
-  font-weight:800;
-  color:#111;
-}
-
-.review-table-row{
-  font-size:18px;
-  font-weight:700;
-  color:#333;
-}
-
-
-.col-number{
-  width:100px;
-  flex-shrink:0;
-}
-
-.col-title{
-  width:658px;
-  flex-shrink:0;
-  white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
-}
-
-.col-date{
-  width:119px;
-  flex-shrink:0;
-  white-space:nowrap;
-}
-
-
-
 .panel{
+  width:100%;
   height:760px;
-  width: 1000px;
   background:#fff;
   display:flex;
   flex-direction:column;
 }
 
-
+.panel-center{
+  width:100%;
+}
 
 .panel-head{
-  height:80px;
-  width: 1000px;
+  height:70px;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -188,64 +126,97 @@ hr{
 }
 
 .panel-title{
-  font-size:32px;
+  font-size:24px;
   font-weight:800;
   color:#111;
 }
 
-
 .panel-body{
+  flex:1;
   padding:22px 24px;
   display:flex;
   flex-direction:column;
-  flex:1;
-  min-height:0;
-  border-left: 2px solid #F47C2A;
-  border-right: 2px solid #F47C2A;
-  border-bottom: 2px solid #F47C2A;
+  border-left:2px solid #F47C2A;
+  border-right:2px solid #F47C2A;
 }
 
+.panel-left .panel-body{
+  justify-content:center;
+  align-items:flex-start;
+}
+
+.archive-list{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:flex-start;
+  gap:20px;
+  width:100%;
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.archive-card{
+  width:220px;
+  height:250px;
+  flex:0 0 220px;
+  border:2px solid #b7b7b7;
+  border-radius:30px;
+  overflow:hidden;
+  background:#fff;
+  box-shadow:0 2px 4px #161616;
+}
+
+.archive-card-link{
+  display:block;
+  width:100%;
+  height:100%;
+  text-decoration:none;
+}
+
+.archive-card-img{
+  width:100%;
+  height:190px;
+  background:#fff;
+  border-bottom:2px solid black;
+}
+
+.archive-card-info{
+  width:100%;
+  height:60px;
+  padding-left:3px;
+  background:#fff;
+  color:black;
+}
 
 .panel-footer{
   margin-top:auto;
   display:flex;
-  align-items:center;
   justify-content:center;
-  gap:20px;
+  border-left:2px solid #F47C2A;
+  border-right:2px solid #F47C2A;
+  border-bottom:2px solid #F47C2A;
 }
+
+
+
 
 .page-list {
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  align-items: center;
   list-style: none;
-  padding: 0;
-  margin: 0;
+  margin: 20px 0px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
 }
-
 .page-list button {
-  width: 36px;
-  height: 36px;
-  border: 1px solid #ddd;
-  background: #fff;
+  width: 30px;
+  height: 30px;
+  margin: 2px 0;
+
+  box-shadow: 2px 2px 5px #b6b6b6;
+}
+.page-list button {
   cursor: pointer;
-  border-radius: 6px;
-}
-
-.page-list button:hover {
-  background: #f5f5f5;
-}
-
-.page-list .current-page {
-  background: #f47c2a;
-  color: #fff;
-  border-color: #f47c2a;
-}
-
-.page-list button:disabled {
-  opacity: 0.4;
-  cursor: default;
 }
 
 .prev-btn,
