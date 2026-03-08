@@ -37,14 +37,16 @@ footer {
   height: 100px;
   background-color: #fde5d4;
 }
-
+.dogcare-write-container {
+  padding: 33px;
+}
 .write-box-container {
   display: flex;
   justify-content: space-evenly;
 }
 
 .title-write-box {
-  height: 400px;
+  height: 40px;
   width: 800px;
   border: 1px solid #f47c2a;
 }
