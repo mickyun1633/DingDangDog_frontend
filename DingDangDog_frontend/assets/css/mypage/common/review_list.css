@@ -1,11 +1,18 @@
 
 *{ margin:0; padding:0;box-sizing:border-box;}
 
+@font-face{
+  font-family: "BMJUA";
+  src: url("./../../BMJUA.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body{
   width:1440px;
   margin:0 auto;
-  background:#ffff;
-  font-family: "BM HANNA_TTF";
+  background:#fff;
+  font-family:"BMJUA", sans-serif;
 }
 
 header{
@@ -207,78 +214,65 @@ hr{
   gap:20px;
 }
 
-/* .pagination{
-  flex:1;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:8px;
-}
-
-.page-list{
-  display:flex;
-  align-items:center;
-  gap:8px;
-  list-style:none;
-  padding:0;
-  margin:0;
-}
-
-.page-item{
-  list-style:none;
-}
-
-.page-btn-left{
-  background-color: #fff;
-  color: #F47C2A;
-  border: 1px solid black;
-  box-shadow: 0 1px 1px #161616;
-  width: 30px;
-  height: 30px;
-}
-
-.page-btn-right{
-  background-color: #fff;
-  color: #F47C2A;
-  border: 1px solid black;
-  box-shadow: 0 1px 1px #161616;
-  width: 30px;
-  height: 30px;
-}
-
-.page-item button{
-  background-color: #fff;
-  color: #F47C2A;
-  border: 1px solid black;
-  box-shadow: 0 1px 1px #161616;
-  width: 30px;
-  height: 30px;
-}
-
-.page-item button:hover{
-    background-color: #F47C2A;
-    color: #fff;
-} */
-
-
-
-
-.page-list{
-  margin-top: 20px;
+.page-list {
   display: flex;
+  gap: 8px;
   justify-content: center;
-  gap: 4px;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-.page-list button{
-  width: 30px;
-  height: 30px;
-  margin: 2px 0;
+
+.page-list button {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.page-list button:hover {
+  background: #f5f5f5;
+}
+
+.page-list .current-page {
+  background: #f47c2a;
+  color: #fff;
+  border-color: #f47c2a;
+}
+
+.page-list button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.prev-btn,
+.next-btn {
+  background-color: white;
+  border: 1px solid #f47c2a;
+}
+
+.prev-btn span,
+.next-btn span {
+  color: #f47c2a;
+}
+.page-item {
   background-color: white;
   border-style: none;
   border-radius: 5px;
-  box-shadow: 2px 2px 4px
+}
+.current-page {
+  background-color: #f47c2a !important;
+  color: white;
 }
 
-.page-btn{
-  color: #f47c2a;
+.prev-btn {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.next-btn {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }

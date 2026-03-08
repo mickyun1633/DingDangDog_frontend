@@ -5,20 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>마이페이지 메인(보호소회원)</title>
   <link rel="stylesheet" href="./../../../assets/css/mypage/shelter/mypage_shelter.css" />
+  <script defer src="./../../../assets/js/mypage/shelter/mypage_shelter.js"></script>
 </head>
 <body>
+  <header>header</header>
   <main class="mypage-shleter">
 
     <div class="container">
       <aside class="sidebar">
         <nav class="side-menu">
-          <a class="btn-side-link" href="#">보호소 정보 변경</a>
+          <a class="btn-side-link" href="./profile_edit_shelter.html">보호소 정보 변경</a>
           <hr>
-          <a class="btn-side-link" href="#">멍! 케어 목록 및 현황</a>
+          <a class="btn-side-link" href="./care_list.html">멍! 케어 목록 및 현황</a>
           <hr>
-          <a class="btn-side-link" href="#">멍! 카이브 등록 정보</a>
+          <a class="btn-side-link" href="./archive_list.html">멍! 카이브 등록 정보</a>
           <hr>
-          <a class="btn-side-link" href="#">1 : 1 문의</a >
+          <a class="btn-side-link" href="./support_list_shelter.html">1 : 1 문의</a >
         </nav>
       </aside>
 
@@ -31,43 +33,8 @@
               <h2 class="panel-title">최근 등록한 멍! 카이브</h2>
             </div>
             <div class="panel-body">
-                <ul class="archive-list">
-                    <li class="archive-card">
-                        <a href="#" class="archive-card-link">
-                            <div class="archive-card-img">이미지칸</div>
-                            <div class="archive-card-info">
-                                <h3>이름</h3>
-                                <h4>정보</h4>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="archive-card">   
-                        <a href="#" class="archive-card-link">
-                            <div class="archive-card-img">이미지칸</div>
-                            <div class="archive-card-info">
-                                <h3>이름</h3>
-                                <h4>정보</h4>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="archive-card">
-                        <a href="#" class="archive-card-link">
-                            <div class="archive-card-img">이미지칸</div>
-                            <div class="archive-card-info">
-                                <h3>이름</h3>
-                                <h4>정보</h4>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="archive-card">
-                        <a href="#" class="archive-card-link">
-                            <div class="archive-card-img">이미지칸</div>
-                            <div class="archive-card-info">
-                                <h3>이름</h3>
-                                <h4>정보|정보|정보</h4>
-                            </div>
-                        </a>
-                    </li>
+                <ul class="archive-list" id="recentArchiveList"></ul>
+                    
                 </ul>
             </div>
           </article>
@@ -102,7 +69,7 @@
               </dl>
 
               <div class="panel-footer panel-footer-right">
-                <button class="btn-outline">보호소 정보 변경</button>
+                <a class="btn-outline" href="./profile_edit_shelter.html">보호소 정보 변경</a>
               </div>
             </div>
           </article>
@@ -112,5 +79,6 @@
 
     </div>
   </main>
+  <footer>footer</footer>
 </body>
 </html>
