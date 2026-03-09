@@ -87,19 +87,19 @@
 }
 
 /* 블랙리스트 */
-.blacklist > .user-number {
+.blacklist > .black-user-number {
   flex: 0.5;
 }
-.blacklist > .user-id {
+.blacklist > .black-user-id {
   flex: 1;
 }
-.blacklist > .user-name {
+.blacklist > .black-user-name {
   flex: 1;
 }
-.blacklist > .user-nickname {
+.blacklist > .black-user-nickname {
   flex: 1;
 }
-.blacklist > .user-reason {
+.blacklist > .black-reason {
   flex: 1.5;
 }
 /* 멍!카이브 */
@@ -168,6 +168,12 @@
 .response-wait {
   color: red;
   font-weight: bold;
+}
+
+.response-complete {
+  border: 1px solid #f47c2a;
+  border-radius: 5px;
+  padding: 2px;
 }
 
 /* 제목 자르기 / 정렬*/
