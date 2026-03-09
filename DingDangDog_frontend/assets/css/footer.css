@@ -1,23 +1,113 @@
 /* footer */
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .footer {
-    height: 210px;
-    background-color: #FFEFE6;
-    color: black;
+  height: 210px;
+  background-color: #FFEFE6;
+  color: black;
 
 }
 
 .container {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .left-menu {
-    padding-left: 50px;
-    padding-top: 80px;
+  padding-left: 50px;
+  padding-top: 80px;
 
+}
+
+/* footer box */
+.footer {
+  height: 210px;
+  background-color: #FFEFE6;
+  color: black;
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  font-family: "BM HANNA_TTF";
+
+}
+
+/* container */
+.container {
+  width: 1440%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+/* footer 왼쪽 : 인포메이션 텍스트 */
+.left-menu {
+  font-family: "BM HANNA_TTF";
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-left: 50px;
+  padding-top: 0px;
+
+}
+
+.info {
+  align-items: center;
+  margin-bottom: 20px;
+  line-height: 2.0;       /* 라인 높이 간격 */
+}
+
+.title {
+
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.caption {
+  font-size: 18px;
+  margin-right: 40px;
+}
+
+
+
+/* footer 왼쪽 : 인포메이션 이메일 */
+.info-email {
+  display: block;
+  align-items: flex-start;
+  margin-top: 20px;
+  padding-left: 68px;
+  text-indent: -68px;
+}
+
+
+.caption-email {
+  font-size: 15px;
+  display: inline;
+  line-height: 1.8;
+  gap: 5px;
+  
+}
+
+.email-content {
+  display: flex;
+  flex-direction: column;   
+  gap: 5px;                 
+}
+
+/* footer 오른쪽 : 로고 이미지 */
+.logo-placeholder {
+  width: 80px;
+  height: 80px;
+  background-color: #F47C2A;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
 }

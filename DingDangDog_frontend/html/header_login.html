@@ -1,4 +1,5 @@
 <!-- header-login -->
+<!-- 로그인 상태 = 로그아웃 버튼이 보이는 header -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,41 +7,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>header-login</title>
-    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./../assets/css/header.css" />
 </head>
 
 <body>
     <header class="header">
         <div class="container">
             <!-- header 왼쪽 : 로고 이미지, 사이트 한 줄 소개 텍스트 -->
-            <div class="btn-left-menu">
-                <!-- 로고 이미지 호버시 바뀌게 2가지 -->
-                <img src="" alt="">
-                <img src="" alt="">
-                <button>멍! 매칭으로 찾는 나만의 반려견, 딩독독!</button>
-            </div>
-            <div class="btn-center-menu">
-                <button>소개</button>
-                <!-- shelter-login 시 멍! 매칭 없어짐 : js에서 처리 -->
-                <button>멍! 매칭</button>
-                <button>멍! 로그</button>
-                <button>멍! 케어</button>
-                <button>멍! 카이브</button><br>
-
-                <div class="right-menu">
-                    <!-- common-login, shelter-login 유형별 로그인시 아이콘 바뀜 : js에서 처리-->
-                    <button>로그아웃</button>
-                    <!-- common, shelter img 2가지 -->
-                    <img src="" alt="">
-                    <img src="" alt="">
-
-
-
+            <div class="left-menu">
+                <!-- header 왼쪽 : 로고 이미지 호버시 바뀌게 2가지 -->
+                <a href="main.html" class="logo-link">
+                    <img src="" alt="DingDongDOG! logo" class="logo-img">
+                </a>
+                <!-- header 왼쪽 : 사이트 슬로건 -->
+                <div class="left-caption">
+                    <p class="slogan">멍! 매칭으로 찾는 나만의 반려견, 딩동독!</p>
                 </div>
             </div>
+
+            <!-- header 중앙 : 해당 페이지로 이동하는 메뉴 -->
+            <nav class="centent-menu">
+                <ul>
+                    <li><a href="" class="centent-menu-item"><span class="mung"> </span>소개</a></li>
+                    <li><a href="" class="centent-menu-item"><span class="mung">멍! </span>매칭</a></li>
+                    <li><a href="" class="centent-menu-item"><span class="mung">멍! </span>로그</a></li>
+                    <li><a href="" class="centent-menu-item"><span class="mung">멍! </span>케어</a></li>
+                    <li><a href="" class="centent-menu-item"><span class="mung">멍! </span>카이브</a></li>
+                </ul>
+            </nav>
+            <!-- header 오른쪽 : 일반사용자/보호소사용자 이미지, 로그아웃 -->
+            <div class="right-menu">
+                <div class="user-section">
+                    <img src="" alt="user-icon" id="headerUserIcon" class="user-section-img">
+                    <div class="user-info">
+                        <span id="haderNickname" class="user-nickname">닉네임</span>
+                        <a href="mypage/common/mypage_common.html" class="mypage-btn">마이페이지</a>
+                    </div>
+                </div>
+                <a href="main.html" class="logout-btn">로그아웃</a>
+            </div>
         </div>
-
-
     </header>
 
 </body>

@@ -1,5 +1,8 @@
 /* header */
 * {
+
+  margin: 0px;
+  padding: 0px;
     margin: 0px;
     padding: 0px;
 }
@@ -25,4 +28,110 @@
 
 .btn-right-menu {
     padding-right: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* header box */
+.header {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    padding: 0 120px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+/* container */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* header 왼쪽 : 로고, 사이트 슬로건*/
+.left-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-img {
+    width: 90px;
+    height: 90px;
+}
+
+.slogan {
+    font-family: "BM HANNA_TTF";
+    font-size: 18px;
+    color: #F47C2A;
+    margin-top: 10px;
+}
+
+/* header 중앙 : 메뉴, 멍! 이미지 교체 */
+.centent-menu ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.centent-menu-item {
+    text-decoration: none;
+    font-size: 23px;
+    color: #F47C2A;
+    display: flex;
+    align-items: center;
+}
+
+/* 현재 페이지 활성화, 이미지 처리 */
+.centent-menu-item.active .mug {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url('../images/mung_active.png');
+    /* 내일 이미지 경로 확인 */
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    /* '멍!' 글자 숨기기 */
+    margin-right: 5px;
+}
+/* 로그아웃 상태 */
+.login-link {
+    text-decoration: none;
+    font-size: 23px;
+    color: #F47C2A;
+}
+/* 로그인 상태 */
+.user-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.user-section-img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.2;
+}
+.user-nickname {
+    font-size: 23px;
+    color: #F47C2A;
+}
+.mypage-btn {
+    font-size: 23px;
+    color: #F47C2A;
+    text-decoration: underline;
+}
+.logout-btn {
+    font-size: 23px;
+    color: #F47C2A;
+    text-decoration: none;
 }
