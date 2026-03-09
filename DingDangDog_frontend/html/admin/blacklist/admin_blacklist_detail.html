@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>블랙리스트 회원 정보</title>
-    <link rel="stylesheet" href="/assets/css/admin/admin.css" />
+    <link rel="stylesheet" href="../../../assets/css/admin/admin.css" />
     <link
       rel="stylesheet"
-      href="/assets/css/admin/blacklist/admin_blacklist_detail.css"
+      href="../../../assets/css/admin/blacklist/admin_blacklist_detail.css"
     />
+    <script defer src="../../../assets/js/admin/admin_blacklist.js"></script>
   </head>
   <body>
     <!-- 전체화면 -->
@@ -75,11 +76,4 @@
       </section>
     </main>
   </body>
-  <script>
-    cancelBtn = document.getElementById("blacklist-cancel-btn");
-    cancelBtn.addEventListener("click", () => {
-      alert("해제되었습니다");
-      location.href = "admin_blacklist.html";
-    });
-  </script>
 </html>
