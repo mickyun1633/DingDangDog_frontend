@@ -191,7 +191,7 @@ function handlePostDelete() {
   if (!isConfirmed) return;
 
   alert("게시글 삭제 처리");
-  // location.href = "./doglog_list.html";
+  location.href = "./doglog_list.html";
 }
 
 /* =========================
@@ -255,3 +255,15 @@ function escapeHtml(value) {
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#39;");
 }
+
+// 수정
+const btnEdit = document.getElementById("btnDetailEdit");
+
+// 예: 현재 게시글 id
+const postId = new URLSearchParams(location.search).get("id");
+
+btnEdit.addEventListener("click", function(e){
+  e.preventDefault();
+
+  location.href = `doglog_edit.html?id=${postId}`;
+});

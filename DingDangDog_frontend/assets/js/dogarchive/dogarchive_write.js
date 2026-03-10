@@ -197,3 +197,7 @@ function handleSubmit() {
   console.log("등록 데이터", submitData);
   alert("등록 가능 상태입니다.");
 }
+btnCancle.addEventListener("click",function(){
+alert("수정취소되었습니다.");
+location.href = "./dogarchive_detail.html";
+});

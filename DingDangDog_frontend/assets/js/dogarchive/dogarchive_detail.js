@@ -168,5 +168,5 @@ function handleDelete() {
   if (!isConfirmed) return;
 
   alert("삭제 처리");
-  // location.href = "./dogarchive_list.html";
+  location.href = "./dogarchive_list.html";
 }
