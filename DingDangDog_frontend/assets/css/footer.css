@@ -6,48 +6,52 @@
 
 /* footer box */
 .footer {
-  height: 210px;
+  box-sizing: border-box;
+  height: 310px;
   background-color: #FFEFE6;
   color: black;
   display: flex;
   align-items: center;
-  padding: 50px;
+  padding: 0;
   font-family: "BM HANNA_TTF";
 
 }
-/* container */
-.container {
-  width: 1440%;
+
+/* f-container */
+.f-container {
+  width: 100%;
+  max-width: none;
   margin: 0px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
+  box-sizing: border-box;
 }
 
 /* footer 왼쪽 : 인포메이션 텍스트 */
-.left-menu {
-  font-family: "BM HANNA_TTF";
+.f-left-menu {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  padding-left: 50px;
   padding-top: 0px;
 
 }
 
-.info {
+.f-info {
   align-items: center;
   margin-bottom: 20px;
-  line-height: 2.0;       /* 라인 높이 간격 */
+  line-height: 2.0;
+  /* 라인 높이 간격 */
 }
-.title {
-  
+
+.f-title {
+
   font-size: 20px;
   margin-right: 10px;
 }
 
-.caption {
+.f-caption {
   font-size: 18px;
   margin-right: 40px;
 }
@@ -55,31 +59,30 @@
 
 
 /* footer 왼쪽 : 인포메이션 이메일 */
-.info-email {
+.f-info-email {
   display: block;
-  align-items: flex-start;
   margin-top: 20px;
   padding-left: 68px;
   text-indent: -68px;
 }
 
 
-.caption-email {
+.f-caption-email {
   font-size: 15px;
   display: inline;
   line-height: 1.8;
   gap: 5px;
-  
+
 }
 
-.email-content {
+.f-email-content {
   display: flex;
-  flex-direction: column;   
-  gap: 5px;                 
+  flex-direction: column;
+  gap: 5px;
 }
 
 /* footer 오른쪽 : 로고 이미지 */
-.logo-placeholder {
+.f-logo-placeholder {
   width: 80px;
   height: 80px;
   background-color: #F47C2A;
@@ -91,4 +94,3 @@
   font-size: 14px;
   font-weight: bold;
 }
-

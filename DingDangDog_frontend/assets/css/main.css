@@ -18,31 +18,36 @@
 /* 전체 사이즈 */
 .content {
   margin: 0 auto;
-  padding: 0 50px;
-  box-sizing: border-box;
-  width: 1440px;
+  padding: 0 150px;
+  /* ◀ 150px로 변경 */
+  width: 100%;
+  max-width: none;
   box-sizing: border-box;
 }
 
 /* card-banner */
 .card-banner-section {
   padding: 100px 0;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .card-banner {
   display: flex;
-  padding-top: 260px;
+  padding: 200px 150px 0 150px;
   align-items: center;
-  justify-content: space-between;
-  gap: 40px;
+  justify-content: center;
+  gap: 100px
 }
 
 .card-list {
   display: flex;
   gap: 20px;
-  overflow: hidden;
-  width: 1420px;
+  overflow: visible;
+  flex: 0 0 auto;
+  justify-content: center;
 }
+
 
 .dog-card img {
   width: 340px;
@@ -50,47 +55,56 @@
   border-radius: 15px;
   object-fit: cover;
 }
-.slide-btn-left, 
-.slide-btn-rigth { 
+
+.slide-btn-left,
+.slide-btn-rigth {
   background: none;
   border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;       
-  height: 400px;    
-  z-index: 10;       
-  outline: none;  
+  width: 50px;
+  height: 400px;
+  z-index: 10;
+  outline: none;
 }
+
 .slide-btn-left img,
 .slide-btn-right img {
   width: 15px !important;
   height: 25px !important;
   object-fit: contain;
 }
+
 .slide-btn-left {
-  margin-right: -10px; 
+  margin-right: -10px;
 }
 
 .slide-btn-rigth {
-  margin-left: -10px; 
+  margin-left: -10px;
 }
 
 /* 멍! 케어 리스트 */
 .list-section {
   padding-bottom: 150px;
   padding-top: 260px;
+  width: 100%;
 }
 
 .list-flex {
   display: flex;
   justify-content: space-between;
+  /* 양 끝으로 벌려 카드 이미지 라인에 맞춤 */
   align-items: center;
+  width: 100%;
 }
 
 .list-box {
   width: 930px;
+  /* 기존 100px을 0으로 바꿔야 '모집중인' 글자가 카드 끝선에 딱 붙습니다. */
+  padding-left: 0;
+
 }
 
 .list-box-caption {
@@ -129,6 +143,11 @@
 
 .list-box-caption li .title:last-child {
   border-bottom: none;
+}
+
+.logo-box {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .logo-box img {
