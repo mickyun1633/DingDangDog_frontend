@@ -16,7 +16,6 @@
 }
 
 /* 모달 배경 */
-
 .modal{
   display:none;
   position:fixed;
@@ -27,20 +26,16 @@
   background:rgba(0,0,0,0.4);
 }
 
-
 /* 모달 박스 */
-
 .modal-content{
-  width:700px;
+  width:1000px;
   background:white;
   margin:120px auto;
   border-radius:5px;
   overflow:hidden;
 }
 
-
 /* 헤더 */
-
 .modal-header{
   background:#f47c2a;
   color:white;
@@ -57,19 +52,15 @@
   cursor:pointer;
 }
 
-
 /* body */
-
 .modal-body{
   padding:20px;
 }
 
-
 /* 헤더 */
-
 .apply-header{
   display:grid;
-  grid-template-columns:1fr 1fr 3fr 1fr;
+  grid-template-columns:1fr 1fr 1fr 3fr 1fr;
   font-weight:bold;
   border-bottom:1px solid #ddd;
   padding:10px 0;
@@ -77,20 +68,17 @@
 
 
 /* row */
-
 .apply-row{
   display:grid;
-  grid-template-columns:1fr 1fr 3fr 1fr;
+  grid-template-columns:1fr 1fr 1fr 3fr 1fr;
   padding:10px 0;
   border-bottom:1px solid #eee;
 }
 
-
 /* 라디오 */
-
 .report-reason{
   display:flex;
-  gap:10px;
+  gap:5px;
 }
 
 .etc-input{
@@ -106,7 +94,6 @@
 }
 
 /* 신고버튼 */
-
 .report-btn{
   background:#ff4d4d;
   border:none;

@@ -11,10 +11,6 @@
   padding-right: 20px;
 }
 
-/* .main h3 {
-  text-size: 20%;
-} */
-
 /* top-banner */
 .top-banner-section .banner-img {
   width: 100%;
@@ -32,9 +28,7 @@
   box-sizing: border-box;
   width: 1440px;
   width: 1440px;
-  /* 고정 너비 유지 */
   padding: 0 150px;
-  /* ◀ 150px로 변경 */
   width: 100%;
   max-width: none;
   box-sizing: border-box;
@@ -53,7 +47,6 @@
   align-items: center;
   justify-content: space-between;
   gap: 40px;
-  /* 양쪽 끝(하단 리스트와 일치)에 버튼 배치 */
   justify-content: space-between;
   width: 100%;
   justify-content: center;
@@ -78,25 +71,18 @@
 
 .slide-btn-left,
 .slide-btn-rigth {
-  /* 카드 사이의 간격 */
   gap: 25px;
   flex: 1;
   justify-content: center;
-  /* 버튼과 카드 뭉치 사이의 최소 간격 확보 */
   margin: 0 40px;
   overflow: visible;
-  /* 잘림 방지 */
 }
 
 .dog-card {
   flex-shrink: 0;
 }
 
-/* [중요] 이미지 너비 수정 */
-/* 1440px - (양옆여백 100px) - (버튼 100px) - (카드간격 60px) = 1180px */
-/* 1180px / 4개 = 295px */
 .dog-card img {
-  /* 1440px - 여백 및 버튼공간을 제외한 나머지를 4등분 */
   width: 280px;
   height: 400px;
   border-radius: 15px;
@@ -106,7 +92,6 @@
 
 .dog-card img {
   width: 310px;
-  /* 1440px 너비에 맞추기 위해 사이즈를 살짝 조정 */
   height: 400px;
   border-radius: 15px;
   object-fit: cover;
@@ -126,12 +111,6 @@
   z-index: 10;
   outline: none;
 }
-
-/* width: 50px;
-  height: 400px;
-  z-index: 10;
-  flex-shrink: 0;
-} */
 
 .slide-btn-left {
   margin: 0;
@@ -177,14 +156,12 @@
 .list-flex {
   display: flex;
   justify-content: space-between;
-  /* 양 끝으로 벌려 카드 이미지 라인에 맞춤 */
   align-items: center;
   width: 100%;
 }
 
 .list-box {
   width: 930px;
-  /* 기존 100px을 0으로 바꿔야 '모집중인' 글자가 카드 끝선에 딱 붙습니다. */
   padding-left: 0;
 
 }
